@@ -1,0 +1,120 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+
+  font-family: 'Cairo', sans-serif;
+  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Reem Kufi', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  font-family: 'Big Shoulders Display', cursive;
+  font-family: 'Cairo', sans-serif;
+  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Reem Kufi', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+}
+.continier {
+
+  max-width: 960px;
+  margin: 0 auto;
+}
+@media (max-width:768px){
+  .continier{
+    height: 100vh;
+    margin: 15px 30px;
+  }
+}
+.disign{ 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 15px;
+  margin: 2rem;
+  overflow: hidden;
+
+}
+@media (max-width:768px){
+  .disign {
+    grid-template-columns: 1fr;
+    margin: 2rem 1rem;
+  }
+}
+@media (max-width:450px){
+  .disign {
+    grid-template-columns: 1fr;
+    margin: 2rem 1rem;
+  }
+}
+.continier .disign .sedans{
+  background-color: hsl(31, 77%, 52%);
+}
+.continier .disign .SUVs{
+  background-color: hsl(184, 100%, 22%);
+}
+.continier .disign .Luxury{
+  background-color: hsl(179, 100%, 13%);
+}
+.continier .disign .sedans,
+.continier .disign .SUVs,
+.continier .disign .Luxury{
+  padding: 40px;
+}
+h1{
+  text-transform: uppercase;
+  padding: 30px 0 ;
+  color: hsl(0, 0%, 95%);
+  font-size: 40px;
+  font-family: Big Shoulders Display;
+  font-weight: 700;
+  
+}
+p{
+  color: hsl(0, 0%, 95%);
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+a{
+  display: inline-block;
+  margin: 60px 0 ;
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  text-transform: capitalize;
+  text-decoration: none;
+
+}
+.continier .disign .sedans a{
+  
+  color: hsl(31, 77%, 52%);
+}
+.continier .disign .sedans a:hover{
+  
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+}
+.continier .disign .SUVs a{
+
+  color: hsl(184, 100%, 22%);
+}
+.continier .disign .SUVs a:hover{
+
+  background-color: hsl(184, 100%, 22%);
+  color: white;
+}
+.continier .disign .Luxury a{
+
+  color: hsl(179, 100%, 13%);
+}
+.continier .disign .Luxury a:hover{
+
+  background-color: hsl(179, 100%, 13%);
+  color: white;
+}
